@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Weather Wise API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>🌤️ AI Weather Wise API</h1>
+    <div class="search">
+      <input id="city" placeholder="Enter city name (e.g. Hyderabad)">
+      <button id="btn">Search</button>
+    </div>
+    <div id="msg" class="msg"></div>
+
+    <div id="result" class="hidden">
+      <div class="card big">
+        <div id="place" class="place"></div>
+        <div class="icon" id="icon"></div>
+        <div class="temp" id="temp"></div>
+        <div id="desc"></div>
+      </div>
+      <div class="card grid">
+        <div>💧 Humidity<br><b id="hum"></b></div>
+        <div>🌬️ Wind<br><b id="wind"></b></div>
+        <div>🌡️ Feels Like<br><b id="feel"></b></div>
+        <div>🕒 Time<br><b id="time"></b></div>
+      </div>
+      <div class="card">
+        <b>🤖 AI Advice</b>
+        <p id="advice" class="advice"></p>
+      </div>
+      <div class="card">
+        <b>📅 7-Day Forecast</b>
+        <div id="forecast" class="forecast"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
